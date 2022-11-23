@@ -1,7 +1,18 @@
-.index-search-input {
-  font-size: 14px;
-  width: 400px;
+.alert-join-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.index-search-button {
+
+.alert-join-us .button-section {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  /* 禁止flex导致的按钮区域收缩变形 */
+  flex-shrink: 0;
+}
+
+.button-w80 {
   width: 80px;
 }
+
