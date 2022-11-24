@@ -3,12 +3,22 @@ body {
   background-color: #f5f5f5;
 }
 /* 顶部导航样式 */
+#logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
 .index-search-input {
   font-size: 14px;
   width: 400px;
 }
 .index-search-button {
   width: 80px;
+}
+.username {
+  margin: 0 6px;
+  padding: 8px;
+  cursor: default;
 }
 /* 底部插件推荐 */
 .extention {
@@ -47,4 +57,19 @@ body {
   .extention {
     display: none;
   }
+}
+/* 提示弹窗样式 */
+.my-alert {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all 0.3s;
+  text-align: center;
+  opacity: 0;
+}
+
+.my-alert.show {
+  opacity: 1;
 }
