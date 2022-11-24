@@ -104,25 +104,27 @@
     </nav>
     <!-- 加入提示 -->
     <div class="alert alert-primary alert-join-us" role="alert">
-      你还没有登录哦，如果没有账号快点击 [注册] 加入我们吧！
-      <section class="button-section">
-        <button
-          type="button"
-          class="btn btn-primary button-w80"
-          data-bs-target="#signInModal"
-          data-bs-toggle="modal"
-        >
-          登 录
-        </button>
-        <button
-          type="button"
-          class="btn btn-dark button-w80"
-          data-bs-target="#signUpModal"
-          data-bs-toggle="modal"
-        >
-          注 册
-        </button>
-      </section>
+      <div class="alert-contain">
+        你还没有登录哦，如果没有账号快点击 [注册] 加入我们吧！
+        <section class="button-section">
+          <button
+            type="button"
+            class="btn btn-primary button-w80"
+            data-bs-target="#signInModal"
+            data-bs-toggle="modal"
+          >
+            登 录
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark button-w80"
+            data-bs-target="#signUpModal"
+            data-bs-toggle="modal"
+          >
+            注 册
+          </button>
+        </section>
+      </div>
     </div>
     <!-- 登录弹窗 -->
     <div
@@ -264,6 +266,11 @@
         </div>
       </div>
     </div>
+    <!-- 页面主体 -->
+    <main>
+      <div class="left-content"></div>
+      <div class="right-content"></div>
+    </main>
     <!-- 插件下载广告 -->
     <div id="extention" class="extention">
       <!-- 引用 bootstrap 提供的 svg 图片 -->

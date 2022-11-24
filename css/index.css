@@ -1,6 +1,6 @@
 .alert-join-us {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -12,7 +12,36 @@
   flex-shrink: 0;
 }
 
+.alert-contain {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .button-w80 {
   width: 80px;
 }
 
+/* 页面主体 */
+main {
+  display: flex;
+  padding: 24px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+main .left-content {
+  width: 694px;
+  flex-shrink: 0;
+  height: 200px;
+  margin-right: 10px;
+  background: #000;
+}
+
+main .right-content {
+  width: 448px;
+  height: 200px;
+  background: #000;
+}
