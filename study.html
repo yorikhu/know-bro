@@ -118,7 +118,138 @@
         <li>考试考证</li>
       </ul>
     </nav>
+    <main>
+      <!-- 左侧精选回答、文章部分 -->
+      <div class="left-content">
+        <div class="title">
+          <svg
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-bookmark-star-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"
+            />
+          </svg>
+          <h2 class="fine-page">精选回答、文章</h2>
+        </div>
+        <div id="pagesList" class="pages-list"></div>
+        <div class="more-button">查看更多</div>
+      </div>
+      <!-- 右侧精选学习路线部分 -->
+      <div class="right-content">
+        <div class="title">
+          <h2>精选学习路线</h2>
+        </div>
+        <div class="content">
+          <div class="study-card">
+            <div class="card-title">
+              <h3>编程-Python</h3>
+              <div class="all-icon">
+                全部<svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-grid-3x2-gap"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 4v2H2V4h2zm1 7V9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 5V9a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 4v2H7V4h2zm5 0h-2v2h2V4zM4 9v2H2V9h2zm5 0v2H7V9h2zm5 0v2h-2V9h2zm-3-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-2z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <span>基础入门</span>
+                <span class="detail">8门课程 · 56篇内容</span>
+              </li>
+              <li>
+                <span>进阶编程</span>
+                <span class="detail">8门课程 · 56篇内容</span>
+              </li>
+              <li>
+                <span>高级编程</span>
+                <span class="detail">8门课程 · 56篇内容</span>
+              </li>
+            </ul>
+          </div>
+          <div class="study-card">
+            <div class="card-title">
+              <h3>办公软件-Office</h3>
+              <div class="all-icon">
+                全部<svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-grid-3x2-gap"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 4v2H2V4h2zm1 7V9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 5V9a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 4v2H7V4h2zm5 0h-2v2h2V4zM4 9v2H2V9h2zm5 0v2H7V9h2zm5 0v2h-2V9h2zm-3-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-2z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <span>Excel</span>
+                <span class="detail">9门课程 · 40篇内容</span>
+              </li>
+              <li>
+                <span>Word</span>
+                <span class="detail">3门课程 · 22篇内容</span>
+              </li>
+              <li>
+                <span>PPT</span>
+                <span class="detail">5门课程 · 39篇内容</span>
+              </li>
+              <li>
+                <span>其他</span>
+                <span class="detail">2门课程 · 7篇内容</span>
+              </li>
+            </ul>
+          </div>
+          <div class="study-card">
+            <div class="card-title">
+              <h3>视觉与设计-设计</h3>
+              <div class="all-icon">
+                全部<svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-grid-3x2-gap"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 4v2H2V4h2zm1 7V9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 5V9a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 4v2H7V4h2zm5 0h-2v2h2V4zM4 9v2H2V9h2zm5 0v2H7V9h2zm5 0v2h-2V9h2zm-3-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-2z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <span>基础与原理</span>
+                <span class="detail">1门课程 · 61篇内容</span>
+              </li>
+              <li>
+                <span>设计软件</span>
+                <span class="detail">19门课程 · 81篇内容</span>
+              </li>
+              <li>
+                <span>应用场景</span>
+                <span class="detail">7门课程 · 93篇内容</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="./public/jquery-3.4.1/jquery-3.4.1.min.js"></script>
     <script src="./public/bootstrap-5.2.3/js/bootstrap.min.js"></script>
+    <script type="module" src="./js/study.js"></script>
   </body>
 </html>

@@ -76,3 +76,93 @@ body {
 .my-alert.show {
   opacity: 1;
 }
+
+/* 文章通用样式 */
+.pages-list .custom-page-component:last-child {
+  border-bottom: none;
+}
+.custom-page-component {
+  margin-top: 20px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.custom-page-component .page-title {
+  cursor: pointer;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.custom-page-component p {
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.custom-page-component .page-footer {
+  display: flex;
+  padding-bottom: 24px;
+}
+
+.custom-page-component .page-footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.custom-page-component .page-footer > div svg {
+  margin-right: 8px;
+}
+
+.custom-page-component .page-footer .good-button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #06f;
+  background-color: rgba(0, 132, 255, 0.08);
+}
+
+.custom-page-component .page-footer .bad-button svg {
+  margin-right: 0;
+}
+
+.custom-page-component .page-footer .bad-button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #06f;
+  background-color: rgba(0, 132, 255, 0.08);
+  margin-right: 12px;
+}
+
+.custom-page-component .page-footer .comment svg {
+  margin-left: 12px;
+  color: skyblue;
+}
+
+.custom-page-component .page-footer .love svg {
+  margin-left: 12px;
+  color: red;
+}
+
+.custom-page-component .page-footer .collect svg {
+  margin-left: 12px;
+  color: gold;
+}
+
+/* 查看更多 */
+.more-button {
+  height: 40px;
+  width: 200px;
+  margin: 24px auto;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 8px;
+  color: #06f;
+  background-color: rgba(0, 132, 255, 0.08);
+  cursor: pointer;
+}
