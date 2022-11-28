@@ -1,11 +1,12 @@
 body {
   min-width: 1200px;
+  background-color: #fff;
 }
 
 /* 轮播样式 */
 #carouselExampleDark {
   max-width: 1200px;
-  margin: auto;
+  margin: 24px auto;
 }
 #carouselExampleDark button {
   width: 8%;
@@ -52,6 +53,10 @@ body {
   color: gray;
 }
 
+.tab-menu ul li:nth-child(n + 2) {
+  cursor: not-allowed;
+}
+
 .tab-menu ul li::after {
   content: '';
   position: absolute;
@@ -65,4 +70,138 @@ body {
 
 .tab-menu ul li:last-child::after {
   display: none;
+}
+
+/* 页面主体 */
+main {
+  display: flex;
+  padding: 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+main h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+main .left-content {
+  width: 694px;
+  padding-right: 12px;
+  flex-shrink: 0;
+  margin-right: 24px;
+}
+
+.left-content .title {
+  display: flex;
+  align-items: center;
+}
+
+.left-content .title svg {
+  color: skyblue;
+  margin-right: 8px;
+}
+
+.left-content .title h2::after {
+  content: '答你想知，解你所想';
+  display: inline-block;
+  border-radius: 8px;
+  margin-left: 12px;
+  padding: 8px;
+  font-size: 14px;
+  color: #67c23a;
+  background: linear-gradient(
+    90.55deg,
+    rgba(103, 194, 58, 0.1) 0.48%,
+    rgba(103, 194, 58, 0.03) 99.52%
+  );
+}
+
+/* 精选学习路线部分 */
+
+main .right-content {
+  width: 448px;
+  padding-bottom: 200px;
+}
+
+.study-card {
+  margin: 24px;
+  margin-left: 0;
+  padding: 8px;
+  padding-top: 0;
+  border-radius: 8px;
+}
+
+.study-card:nth-child(1) {
+  background: linear-gradient(
+    to right bottom,
+    rgb(224, 233, 250),
+    rgb(244, 247, 254)
+  );
+}
+
+.study-card:nth-child(2) {
+  background: linear-gradient(
+    to right bottom,
+    rgb(218, 245, 230),
+    rgb(245, 252, 248)
+  );
+}
+
+.study-card:nth-child(3) {
+  background: linear-gradient(
+    to right bottom,
+    rgb(210, 241, 244),
+    rgb(241, 250, 251)
+  );
+}
+
+.study-card .card-title {
+  display: flex;
+  justify-content: space-between;
+  height: 52px;
+}
+
+.study-card .card-title .all-icon {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  cursor: pointer;
+  color: #999;
+}
+
+.study-card .card-title .all-icon svg {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  padding-left: 8px;
+  margin-right: 12px;
+}
+
+.study-card .card-title h3 {
+  height: 52px;
+  padding-left: 8px;
+  font-size: 16px;
+  line-height: 52px;
+}
+
+.study-card ul {
+  list-style: none;
+  padding: 0;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 0 6px;
+  margin-bottom: 12px;
+}
+
+.study-card ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.study-card ul li .detail {
+  font-size: 14px;
+  color: #999;
 }

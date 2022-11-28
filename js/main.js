@@ -37,7 +37,6 @@ const signInOrSignUpModalLogic = (type) => {
       isFormEmpty = !!el.value ? isFormEmpty : true;
     });
     if (!isFormEmpty) {
-      console.log($('#signInUserName').val());
       // 修改用户名
       $('.username').html(`欢迎回来，<b>${$('#signInUserName').val()}</b>！`);
       // 提示提交成功
