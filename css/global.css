@@ -87,7 +87,6 @@ body {
 }
 
 .custom-page-component .page-title {
-  cursor: pointer;
   font-size: 18px;
   overflow: hidden;
   white-space: nowrap;
@@ -95,12 +94,15 @@ body {
 }
 
 .custom-page-component p {
-  cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+.custom-page-component .page-content {
+  cursor: pointer;
 }
 
 .custom-page-component .page-footer {
