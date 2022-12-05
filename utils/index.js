@@ -1,12 +1,14 @@
 // 文章DOM元素生成器
 export const docsDOMGenerator = (page) => {
   return `<div class="custom-page-component">
-  <h3 class="page-title">
-    ${page.title}
-  </h3>
-  <p>
-    ${page.detail}
-  </p>
+  <div class="page-content" link="${page.link}">
+    <h3 class="page-title">
+      ${page.title}
+    </h3>
+    <p>
+      ${page.detail}
+    </p>
+  </div>
   <div class="page-footer">
     <div class="good-button">
       <svg
