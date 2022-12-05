@@ -64,7 +64,7 @@ body {
 /* 提示弹窗样式 */
 .my-alert {
   width: 200px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%);
@@ -148,11 +148,17 @@ body {
 
 .custom-page-component .page-footer .love svg {
   margin-left: 12px;
+}
+
+.custom-page-component .page-footer .love.active svg {
   color: red;
 }
 
 .custom-page-component .page-footer .collect svg {
   margin-left: 12px;
+}
+
+.custom-page-component .page-footer .collect.active svg {
   color: gold;
 }
 
