@@ -1,3 +1,18 @@
+// 提示信息封装
+export const successMessage = (type, text) => {
+  const key = new Date().getTime();
+  $('body').append(
+    `<div id="${key}" class="alert alert-${type} my-alert" role="alert">${text}</div>`
+  );
+  $(`#${key}`).addClass('show');
+  setTimeout(() => {
+    $(`#${key}`).removeClass('show');
+    setTimeout(() => {
+      $(`#${key}`).remove();
+    }, 500);
+  }, 1000);
+};
+
 // 文章DOM元素生成器
 export const docsDOMGenerator = (page) => {
   return `<div class="custom-page-component">

@@ -1,22 +1,9 @@
+import { successMessage } from '../utils/index.js';
+
 // 页面下侧插件广告关闭逻辑
 $('#extClose').click(() => {
   $('#extention').css('display', 'none');
 });
-
-// 提示信息封装
-const successMessage = (type, text) => {
-  const key = new Date().getTime();
-  $('body').append(
-    `<div id="${key}" class="alert alert-${type} my-alert" role="alert">${text}</div>`
-  );
-  $(`#${key}`).addClass('show');
-  setTimeout(() => {
-    $(`#${key}`).removeClass('show');
-    setTimeout(() => {
-      $(`#${key}`).remove();
-    }, 500);
-  }, 1000);
-};
 
 // 弹窗逻辑函数
 const signInOrSignUpModalLogic = (type) => {
@@ -51,3 +38,30 @@ const signInOrSignUpModalLogic = (type) => {
 
 signInOrSignUpModalLogic('signIn');
 signInOrSignUpModalLogic('signUp');
+
+// 给页面文章绑定点击事件，点击跳转到对应文章地址
+$('#pagesList .page-content').click((e) => {
+  window.open($(e.currentTarget).attr('link'), '_blank');
+});
+
+// 喜欢事件绑定
+$('#pagesList .love').click((e) => {
+  if ($(e.currentTarget).attr('class') === 'love') {
+    $(e.currentTarget).addClass('active');
+    successMessage('success', '已喜欢');
+  } else {
+    $(e.currentTarget).removeClass('active');
+    successMessage('success', '已取消喜欢');
+  }
+});
+
+// 收藏事件绑定
+$('#pagesList .collect').click((e) => {
+  if ($(e.currentTarget).attr('class') === 'collect') {
+    $(e.currentTarget).addClass('active');
+    successMessage('success', '已收藏');
+  } else {
+    $(e.currentTarget).removeClass('active');
+    successMessage('success', '已取消收藏');
+  }
+});
